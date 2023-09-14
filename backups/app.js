@@ -44,3 +44,6 @@ function AnimalQuiz() {
     
 }
 
+function changeBgColor() {
+    
+}

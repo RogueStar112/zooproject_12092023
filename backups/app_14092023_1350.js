@@ -1,8 +1,9 @@
 function askQuestion(questiontxt, answer) {
 
-    let userPrompt = prompt(`${questiontxt}`)
+    let userPrompt = prompt(toString(questiontxt))
 
     if (userPrompt.toLowerCase() == answer.toLowerCase()) {
+        points += 1;
         alert('correct!')
     } else {
         alert('incorrect!')
@@ -16,12 +17,14 @@ function animalQuiz() {
 
     let correct_messages = ""; 
 
-    let question_1 = askQuestion("Peregrine Falcons are the fastest animals in the world.", "true")
-    let question_2 = askQuestion("Elephants eat with their mouths. True/False", "false")
-    let question_3 = askQuestion("Frogs do not drink through their mouths. True/False", "true")
+    let question_1 = askQuestion("China is the most populated country in the world. True/False", "true");
+    let question_2 = askQuestion("Peregrine Falcons are the fastest animals in the world.", "true")
+    let question_3 = askQuestion("Elephants eat with their mouths. True/False", "false")
+    let question_4 = askQuestion("Frogs do not drink through their mouths. True/False", "false")
 
+   
+    alert(`You got ${points}/4 correct!`)
     
-
 }
 
 
