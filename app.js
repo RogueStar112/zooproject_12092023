@@ -19,7 +19,7 @@ function animalQuiz() {
 
     let correct_messages = ""; 
 
-    let question_1 = askQuestion("Peregrine Falcons are the fastest animals in the world.", "true")
+    let question_1 = askQuestion("Peregrine Falcons are the fastest animals in the world. True/False", "true")
     let question_2 = askQuestion("Elephants eat with their mouths. True/False", "false")
     let question_3 = askQuestion("Frogs do not drink through their mouths. True/False", "true")
 
