@@ -2,11 +2,14 @@ function askQuestion(questiontxt, answer) {
 
     let userPrompt = prompt(`${questiontxt}`)
 
+    // made user input and answer lower case to prevent case sensitivity.
+
     if (userPrompt.toLowerCase() == answer.toLowerCase()) {
         alert('correct!')
     } else {
         alert('incorrect!')
     }
+
 
 }
 
