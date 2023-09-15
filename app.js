@@ -62,8 +62,13 @@ function rateMyWebsite() {
         alert('Rating should be between 1 - 5.');
 
     // if rating is not a number
-    } else if (typeof rating != "number") {
-        alert('Please enter a number.')
+    // } else if (typeof rating != "number") {
+    //     alert(typeof rating)
+    
+
+       // If the user doesn't put a valid input, run this function again. This is recursion.
+       rateMyWebsite()
+
     } else {
         
         for(i=0; i<rating; i++) {
