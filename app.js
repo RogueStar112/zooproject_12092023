@@ -52,6 +52,33 @@ function addAnimalFact() {
 
 }
 
+function rateMyWebsite() {
+
+    let rating = prompt("Rate my website on a scale of 1 - 10")
+
+
+    // If rating is less than 1 or more than 5.
+    if (rating < 1 || rating > 5) {
+        alert('Rating should be between 1 - 5.');
+
+    // if rating is not a number
+    } else if (typeof rating != "number") {
+        alert('Please enter a number.')
+    } else {
+        
+        for(i=0; i<rating; i++) {
+
+            document.getElementById('star-rating').innerHTML += "<img src='star.png' />";
+
+        }
+
+    }
+
+
+
+
+
+}
 /* source for facts: https://www.womansday.com/life/pet-care/a3900/animal-facts-for-kids-true-or-false-78075/
                     https://www.britannica.com/animal/peregrine-falcon
 
