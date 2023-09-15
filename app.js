@@ -54,7 +54,7 @@ function addAnimalFact() {
 
 function rateMyWebsite() {
 
-    let rating = prompt("Rate my website on a scale of 1 - 10")
+    let rating = prompt("Rate my website on a scale of 1 - 5")
 
 
     // If rating is less than 1 or more than 5.
